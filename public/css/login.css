@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,400&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.login-section {
+  width: 400px;
+  height: 750px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  /* width: 100%; */
+  box-shadow: 13px 13px 20px #cbced1, -13px 13px 20px #ffffff;
+}
+
+@media screen and (min-width: 673px) {
+  .login-section {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 600px;
+  }
+}
+
+.logo {
+  background: url(../img/logo.png);
+  width: 120px;
+  height: 54px;
+  border-radius: 10%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf,
+    -8px -8px 15px #ffffff;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 24px;
+  letter-spacing: 0.5px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 7px;
+  letter-spacing: 3px;
+}
+
+.field {
+  width: 100%;
+  padding: 75px 5px 5px 5px;
+}
+
+.field input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 20px 10px 20px 20px;
+}
+
+.email,
+.password {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+.field img {
+  height: 22px;
+  margin: 0 25px -3px 25px;
+  padding-bottom: 5px;
+}
+
+.login-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  background: #7faaf7;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: 0.5s;
+}
+
+.login-button:hover {
+  background: #415da5;
+}
+
+.login-button:active {
+  background: #415da5;
+}
+
+.link {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 15px;
+}
