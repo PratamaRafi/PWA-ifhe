@@ -1,4 +1,4 @@
-var CACHE_NAME = 'shayna-cache-v2';
+var CACHE_NAME = 'shayna-cache-v3';
 var urlsToCache = [
     '/',
     'index.html',
