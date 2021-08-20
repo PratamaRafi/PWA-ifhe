@@ -25,8 +25,9 @@ var firebaseConfig = {
         var uid = user.uid;
         // alert(user.email)
       // ...
-    } else {
-      // User is signed out
-      alert("Tidak ada user")
-    }
+    } 
+    // else {
+    //   // User is signed out
+    //   alert("Tidak ada user")
+    // }
   });
