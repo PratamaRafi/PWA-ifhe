@@ -11,59 +11,19 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
 
-function Signup(){
-    var username = document.getElementById("reg_username").value;
-    var email = document.getElementById("reg_email").value;
-    var password = document.getElementById("reg_password").value;
-
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then((userCredential) => {
-    // Signed in
-    var user = userCredential.user;
-    console.warn(user);
-    window.alert("Berhasul daftar")
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    window.alert("Error : " + errorMessage);
-  });
-
-}
-
-
-
-function Login(){
-    
-  var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
-
-
-firebase.auth().signInWithEmailAndPassword(email, password).then((userCredential) => {
-    // Signed in
-    var user = userCredential.user;
-    // location.replace("main.html");
-    console.log(user.uid);
-   
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-
-    window.alert("Error : " + errorMessage);
-  });
-
-  window.alert(email + " " + password);
-}
-
-
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       // User is signed in
-        // window.location.replace("main.html");
+      var user = firebase.auth().currentUser;
+      if(user != null){
+        var email_id = user.email;
+        document.getElementById("user_text").innerHTML = "Selamat Datang Kembali, apakabar " + email_id;
+        console.log(email_id);
+        }
+        // document.location.href("main.html");
         console.warn(user.email);
         var uid = user.uid;
-        alert(user.email)
+        // alert(user.email)
       // ...
     } else {
       // User is signed out
