@@ -12,7 +12,7 @@ var firebaseConfig = {
 
 
 function Signup(){
-    var username = document.getElementById("reg_username").value;
+    // var username = document.getElementById("reg_username").value;
     var email = document.getElementById("reg_email").value;
     var password = document.getElementById("reg_password").value;
 
@@ -21,12 +21,24 @@ function Signup(){
     // Signed in
     var user = userCredential.user;
     console.warn(user);
-    window.alert("Berhasul daftar")
+    Swal.fire({
+      icon: 'success',
+      title: 'Selamat',
+      text: 'Anda berhasil daftar',
+      showConfirmButton: false,
+      timer: 2500
+    })
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
-    window.alert("Error : " + errorMessage);
+    // window.alert("Error : " + errorMessage);
+    Swal.fire({
+      title: 'Error!',
+      text: 'Email dan Password sudah terdaftar',
+      icon: 'error',
+      confirmButtonText: 'Kembali'
+    })
   });
 
 }
@@ -51,7 +63,12 @@ firebase.auth().signInWithEmailAndPassword(email, password).then((userCredential
     var errorCode = error.code;
     var errorMessage = error.message;
 
-    window.alert("Error : " + errorMessage);
+    Swal.fire({
+      title: 'Error!',
+      text: 'Email atau Password salah',
+      icon: 'error',
+      confirmButtonText: 'Kembali'
+    })
   });
 
   // window.alert(email + " " + password);
@@ -71,3 +88,6 @@ firebase.auth().signInWithEmailAndPassword(email, password).then((userCredential
   //     alert("Tidak ada user")
   //   }
   // });
+
+  // SWEETALERT2
+  

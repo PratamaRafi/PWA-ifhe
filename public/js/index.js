@@ -17,7 +17,7 @@ var firebaseConfig = {
       var user = firebase.auth().currentUser;
       if(user != null){
         var email_id = user.email;
-        document.getElementById("user_text").innerHTML = "Selamat Datang Kembali, apakabar " + email_id;
+        document.getElementById("user_text").innerHTML = "Selamat Datang Kembali " + email_id;
         console.log(email_id);
         }
         // document.location.href("main.html");

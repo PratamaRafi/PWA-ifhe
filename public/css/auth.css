@@ -169,6 +169,22 @@ form.sign-in-form {
 }
 
 .btn-submit2 {
+  width: 160px;
+  background-color: #415da5;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  padding-left: 55px;
+}
+
+.btn-submit2 {
   width: 150px;
   background-color: #415da5;
   border: none;

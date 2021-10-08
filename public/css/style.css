@@ -22,7 +22,7 @@ body {
 
 .header {
   width: 100%;
-  background: #415da5;
+  background: #242582;
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom-right-radius: 30px;
@@ -78,7 +78,7 @@ body {
 .header-area {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
-  background-color: #415da5;
+  background-color: #242582;
   width: 100%;
   height: 50px;
   position: fixed;
@@ -97,6 +97,15 @@ body {
   display: block;
   margin-left: -0.25rem;
 }
+
+.header-content .logo-wrapper {
+  height: 39px;
+  width: 68px;
+  background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .header-content .logo-wrapper a {
   display: block;
 }
@@ -278,7 +287,7 @@ body {
 }
 
 .card {
-  background-color: #415da5;
+  background-color: #242582;
   border-radius: 6%;
   box-shadow: 0 0.3px 2px rgba(0, 0, 0, 0.027),
     0 0.7px 4.4px rgba(0, 0, 0, 0.04), 0 1.2px 7.4px rgba(0, 0, 0, 0.05),
@@ -286,6 +295,10 @@ body {
     0 3.7px 22.7px rgba(0, 0, 0, 0.072), 0 5.3px 32.2px rgba(0, 0, 0, 0.08),
     0 7.7px 46.7px rgba(0, 0, 0, 0.09), 0 11.8px 72px rgba(0, 0, 0, 0.103),
     0 21px 128px rgba(0, 0, 0, 0.13) !important;
+}
+
+.card-body-blue {
+  background-color: #415da5;
 }
 
 .btn-main {
